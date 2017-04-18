@@ -12,6 +12,7 @@ body {
 .registration-container {
     max-width: 985px;
     margin: 0 auto;
+    padding: 0 24px;
 }
 
 .wrapper {
@@ -110,6 +111,7 @@ body {
 .reg-calc {
     .slick-slide {
         font-size: 22px;
+        color: $second-color;
     }
 }
 
@@ -140,6 +142,98 @@ body {
 
 .days {
     font-size: 15px;
+}
+
+.registration {
+    &-info,
+    &-calc {
+        color: #464e5b;
+        font-size: 22px;
+        line-height: 22px;
+    }
+    &-calc {
+        margin-bottom: 20px;
+    }
+    &-info {
+        &--inverse {
+            color: #0054b8;
+        }
+    }
+    &-top {
+        padding-top: 40px;
+        .columns {
+            .registration-item {
+                position: relative;
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    right: -.625rem;
+                    width: 3px;
+                    background-color: #f2f2f2;
+                }
+            }
+            &:last-child {
+                .registration-item {
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    &-tabs {
+        padding-top: 55px;
+    }
+}
+
+.tabs {
+	display: flex;
+	align-items: stretch;
+	border: none;	
+}
+
+.tabs-title {
+	height: 75px;	
+	line-height: 75px;
+    float: none;
+    width: 33.3%;
+    text-align: center;	
+    background-color: #f2f2f2;	
+    border-right: 1px solid #fff;
+    &:last-child {
+    	border-right: none;
+    }
+    &.is-active {
+    	background-color: $second-color;
+    }
+    a {
+    	font-size: 22px;
+    	color: #464e5b;
+    	opacity: 0.5;	
+    	display: inline-block;	
+    	vertical-align: middle;	
+    	padding: 0 20px;
+    	line-height: 20px;		
+    	align-content: center;
+    	background-color: transparent;
+    }
+}
+
+.tabs-content {
+	border: none;	
+}
+
+.tabs-panel {
+	padding: 30px 0 0;	
+}
+
+.tabs-title>a:focus, 
+.tabs-title>a[aria-selected='true'] {
+	background-color: transparent;
+	color: #ffffff;
+	opacity: 1;	
 }
 
 .footer {

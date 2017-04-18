@@ -25,4 +25,8 @@ $(document).ready(function() {
         arrows: false,
         slidesToShow: 1
     });
+
+
+
+    var elem = new Foundation.Tabs($('#example-tabs'));
 });
