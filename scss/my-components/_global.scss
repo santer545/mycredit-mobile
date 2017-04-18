@@ -1,0 +1,159 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    background-color: $body-bg;
+}
+
+.container {
+    max-width: 785px;
+    margin: 0 auto;
+}
+
+.registration-container {
+    max-width: 985px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    min-width: 320px;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.header,
+.footer-wr {
+    background-color: $brand-color;
+}
+
+.header {
+    align-items: center;
+    padding: $header-padding;
+    -webkit-box-shadow: 0px 6px 18px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 6px 18px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 6px 18px -5px rgba(0, 0, 0, 0.75);
+}
+
+.logo {
+    width: 75%;
+    margin: 0 auto;
+    display: block;
+}
+
+.calculator {
+    &-top {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        @media screen and (min-width: 30em) {
+            padding-top: 42px;
+            padding-bottom: 53px;
+        }
+    }
+    &-bottom {
+        padding-bottom: 20px;
+        @media screen and (min-width: 30em) {
+            padding-bottom: 80px;
+        }
+    }
+    &-money,
+    &-days {
+        font-size: 30px;
+        color: $second-color;
+        display: block;
+        @media screen and (min-width: 30em) {
+            font-size: 40px;
+        }
+    }
+    &-days {
+        font-size: 14px;
+        font-weight: 300;
+        color: #0a3660;
+        text-transform: none;
+        margin-top: 5px;
+        @media screen and (min-width: 30em) {
+            font-size: 20px;
+            margin-top: 12px;
+        }
+    }
+    &-heading {
+        font-size: 14px;
+        line-height: 22px;
+        color: #464e5b;
+        text-transform: uppercase;
+        @media screen and (min-width: 30em) {
+            font-size: 16px;
+            line-height: 29px;
+        }
+    }
+    &-info {
+        padding: 0 20px;
+        margin-bottom: 30px;
+        @media screen and (min-width: 30em) {
+            padding: 0 60px;
+            margin-bottom: 80px;
+        }
+    }
+}
+
+.slick-slide {
+    font-size: 30px;
+    color: #464e5b;
+    @media screen and (min-width: 30em) {
+        font-size: 42px;
+    }
+}
+
+.reg-calc {
+    .slick-slide {
+        font-size: 22px;
+    }
+}
+
+.slick-track {
+    padding-top: 2px;
+}
+
+.slick-slider {
+    position: relative;
+    &:after,
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 50px;
+        -webkit-box-shadow: inset -5px 4px 202px 57px rgba(255, 255, 255, 1);
+        -moz-box-shadow: inset -5px 4px 202px 57px rgba(255, 255, 255, 1);
+        box-shadow: inset -5px 4px 202px 57px rgba(255, 255, 255, 1);
+        z-index: 1;
+    }
+    &:before {
+        left: auto;
+        right: 0;
+    }
+}
+
+.days {
+    font-size: 15px;
+}
+
+.footer {
+    display: table-footer-group;
+    &-wrapper {
+        font-size: 0;
+        padding: 20px;
+        @media screen and (min-width: 30em) {
+            padding: 45px 50px;
+        }
+    }
+    &-img {
+        display: inline-block;
+        vertical-align: middle;
+        width: 33.3%;
+    }
+}

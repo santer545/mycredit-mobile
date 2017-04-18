@@ -1,168 +1,127 @@
 <!doctype html>
 <html class="no-js" lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foundation for Sites</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900" rel="stylesheet">
     <link rel="stylesheet" href="css/app.css">
-  </head>
-  <body>
-    <div class="row">
-      <div class="large-12 columns">
-        <h1>Welcome to Foundation</h1>
-      </div>
-    </div>
-    
-    <div class="row">
-      <div class="large-12 columns">
-        <div class="callout">
-          <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-          <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-          <p>Once you've exhausted the fun in this document, you should check out:</p>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://zurb.com/university/code-skills">Foundation Code Skills</a><br />These online courses offer you a chance to better understand how Foundation works and how you can master it to create awesome projects.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://foundation.zurb.com/forum">Foundation Forum</a><br />Join the Foundation community to ask a question or show off your knowlege.</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 medium-4 medium-push-2 columns">
-              <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-            </div>
-            <div class="large-4 medium-4 medium-pull-2 columns">
-              <p><a href="https://twitter.com/ZURBfoundation">@zurbfoundation</a><br />Ping us on Twitter if you have questions. When you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-            </div>        
-          </div>
-        </div>
-      </div>
-    </div>
+</head>
 
-    <div class="row">
-      <div class="large-8 medium-8 columns">
-        <h5>Here&rsquo;s your basic grid:</h5>
-        <!-- Grid Example -->
-
-        <div class="row">
-          <div class="large-12 columns">
-            <div class="primary callout">
-              <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.callout element so you can see where the columns are - it's not required at all for the grid.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-6 medium-6 columns">
-            <div class="primary callout">
-              <p>Six columns</p>
-            </div>
-          </div>
-          <div class="large-6 medium-6 columns">
-            <div class="primary callout">
-              <p>Six columns</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="primary callout">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="primary callout">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="primary callout">
-              <p>Four columns</p>
-            </div>
-          </div>
-        </div>
-        
-        <hr />
-                
-        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-        <form>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-12.columns" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <div class="row collapse">
-                <label>Input Label</label>
-                <div class="input-group">
-                  <input type="text" placeholder="small-9.columns" class="input-group-field" />
-                  <span class="input-group-label">.com</span>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="row align-middle">
+                <div class="small-2 columns">
+                    <a href="">
+                        <img src="images/authorize.png" alt="">
+                    </a>
                 </div>
-              </div>
+                <div class="small-8 columns text-center">
+                    <a href="#" class="logo">
+                        <img src="images/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="small-2 columns text-right">
+                    <a href="">
+                        <img src="images/phone.png" alt="">
+                    </a>
+                </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Select Box</label>
-              <select>
-                <option value="husker">Husker</option>
-                <option value="starbuck">Starbuck</option>
-                <option value="hotdog">Hot Dog</option>
-                <option value="apollo">Apollo</option>
-              </select>
+        </header>
+        <main>
+            <div class="container">
+                <div class="calculator">
+                    <div class="calculator-top text-center">
+                        <p class="heading-h2">Какую сумму вы желаете получить?</p>
+                        <div class="center">
+                            <div>5500&#8372;</div>
+                            <div>6000&#8372;</div>
+                            <div>3000&#8372;</div>
+                            <div>5500&#8372;</div>
+                            <div>6000&#8372;</div>
+                            <div>3000&#8372;</div>
+                        </div>
+                    </div>
+                    <div class="calculator-bottom">
+                        <p class="heading-h2 text-center">На какой срок</p>
+                        <div class="center text-center">
+                            <div>65 <span class="days">дн.</span></div>
+                            <div>1 <span class="days">дн.</span></div>
+                            <div>30 <span class="days">дн.</span></div>
+                            <div>65 <span class="days">дн.</span></div>
+                            <div>1 <span class="days">дн.</span></div>
+                            <div>30 <span class="days">дн.</span></div>
+                        </div>
+                    </div>
+                    <div class="calculator-info">
+                        <div class="row align-right">
+                            <div class="column small-6">
+                                <div class="calculator-heading">
+                                    Занимаете
+                                    <span class="calculator-money">
+                                6000&#8372;
+                              </span>
+                                    <span class="calculator-days">На 38 дней</span>
+                                </div>
+                            </div>
+                            <div class="column small-6 text-right">
+                                <div class="calculator-heading">
+                                    Отдаете
+                                    <span class="calculator-money">
+                                 6500&#8372;
+                                                             </span>
+                                    <span class="calculator-days">02 сентябрь 2017</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a class="button success large" href="#">Получить деньги</a>
+                </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="large-6 medium-6 columns">
-              <label>Choose Your Favorite</label>
-              <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-              <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
+        </main>
+        <footer class="footer text-center">
+            <div class="footer-wrapper">
+                <p class="heading-h3 text-center">Как погасить / продлить кредит</p>
+                <figure class="footer-img">
+                    <img src="images/visa-tab.png" alt="">
+                </figure>
+                <figure class="footer-img">
+                    <svg version="1.1" id="Шар_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="42.362px" height="42.894px" viewBox="-89.956 1374.219 42.362 42.894" enable-background="new -89.956 1374.219 42.362 42.894" xml:space="preserve">
+                        <g>
+                            <path fill="#00B181" d="M-49.433,1388.285l-18.752-13.874c-0.344-0.255-0.838-0.255-1.181,0l-18.752,13.874
+                      c-0.657,0.486-0.927,1.334-0.671,2.111c0.256,0.776,0.978,1.298,1.795,1.298h1.219l-0.032,0.242
+                      c-0.005,0.042-0.009,0.084-0.009,0.128v19.195h-0.877c-0.548,0-0.994,0.445-0.994,0.993c0,0.549,0.446,0.994,0.994,0.994h35.835
+                      c0.548,0,0.994-0.445,0.994-0.994c0-0.548-0.446-0.993-0.994-0.993h-0.877v-19.195c0-0.044-0.003-0.086-0.009-0.128l-0.032-0.242
+                      h1.219c0.818,0,1.539-0.521,1.795-1.298C-48.506,1389.619-48.775,1388.771-49.433,1388.285z M-81.231,1411.259h-2.597v-18.202
+                      h2.597V1411.259z M-76.637,1391.934c-0.005,0.043-0.009,0.086-0.009,0.13v19.195h-2.598v-19.195c0-0.044-0.004-0.086-0.01-0.128
+                      l-0.032-0.242h2.678L-76.637,1391.934z M-72.062,1411.259h-2.597v-18.202h2.597V1411.259z M-67.467,1391.936
+                      c-0.005,0.042-0.009,0.084-0.009,0.128v19.195h-2.598v-19.195c0-0.044-0.004-0.086-0.009-0.128l-0.032-0.242h2.68L-67.467,1391.936
+                      z M-62.892,1411.259h-2.598v-18.202h2.598V1411.259z M-58.297,1391.936c-0.005,0.042-0.01,0.084-0.01,0.128v19.195h-2.598v-19.195
+                      c0-0.044-0.004-0.087-0.009-0.13l-0.03-0.24h2.678L-58.297,1391.936z M-53.722,1411.259h-2.597v-18.202h2.597V1411.259z
+                      M-86.699,1389.706l17.924-13.26l0.127,0.094l17.797,13.166H-86.699z" />
+                            <path fill="#00B181" d="M-48.588,1415.125h-40.375c-0.548,0-0.994,0.445-0.994,0.993c0,0.549,0.446,0.994,0.994,0.994h40.375
+                      c0.548,0,0.994-0.445,0.994-0.994C-47.594,1415.571-48.04,1415.125-48.588,1415.125z" />
+                        </g>
+                    </svg>
+                </figure>
+                <figure class="footer-img">
+                    <img src="images/easypay-tab.png" alt="">
+                </figure>
             </div>
-            <div class="large-6 medium-6 columns">
-              <label>Check these out</label>
-              <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-              <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Textarea Label</label>
-              <textarea placeholder="small-12.columns"></textarea>
-            </div>
-          </div>
-        </form>
-      </div>     
-
-      <div class="large-4 medium-4 columns">
-        <h5>Try one of these buttons:</h5>
-        <p><a href="#" class="button">Simple Button</a><br/>       
-        <a href="#" class="success button">Success Btn</a><br/>
-        <a href="#" class="alert button">Alert Btn</a><br/>
-        <a href="#" class="secondary button">Secondary Btn</a></p>           
-        <div class="callout">
-          <h5>So many components, girl!</h5>
-          <p>A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with details on making them your own.</p>
-          <a href="http://foundation.zurb.com/sites/docs/" class="small button">Go to Foundation Docs</a>          
-        </div>
-      </div>
+        </footer>
     </div>
-
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/what-input/dist/what-input.js"></script>
     <script src="bower_components/foundation-sites/dist/js/foundation.js"></script>
     <script src="js/app.js"></script>
-  </body>
+    <script src="js/slick.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
 </html>

@@ -4,9 +4,10 @@
 @import 'foundation';
 @import 'motion-ui';
 
+
 @include foundation-global-styles;
-@include foundation-grid;
-// @include foundation-flex-grid;
+//@include foundation-grid;
+@include foundation-flex-grid;
 @include foundation-typography;
 @include foundation-button;
 @include foundation-forms;
@@ -44,8 +45,14 @@
 @include foundation-tooltip;
 @include foundation-top-bar;
 @include foundation-visibility-classes;
-@include foundation-float-classes;
-// @include foundation-flex-classes;
+//@include foundation-float-classes;
+@include foundation-flex-classes;
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+@import 'variables';
+@import 'my-components/buttons';
+@import 'my-components/typography';
+@import 'my-components/global';
+@import 'plugins/slick';
