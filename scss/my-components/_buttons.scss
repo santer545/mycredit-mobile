@@ -1,9 +1,7 @@
 .button.success {
     background-color: #1ab07c;
     color: #fff;
-    -webkit-box-shadow: -5px 4px 18px -5px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: -5px 4px 18px -5px rgba(0, 0, 0, 0.75);
-    box-shadow: -5px 4px 18px -5px rgba(0, 0, 0, 0.75);
+    
     &:hover,
     &:active,
     &:focus {
@@ -12,13 +10,20 @@
     }
 }
 
+.button {
+    font-weight: 500;  
+    -webkit-box-shadow: -5px 4px 18px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -5px 4px 18px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: -5px 4px 18px -5px rgba(0, 0, 0, 0.75); 
+}
+
 .button.large {
     font-size: 20px;
     border-radius: 5px;
     padding: 20px 60px;
     margin-bottom: 20px;
-    @media screen and (min-width: 30em) {
-        padding: 31px 95px;
+    @media screen and (min-width: 500px) {
+        padding: 31px 155px;
         margin-bottom: 30px;
         font-size: 25px;
     }

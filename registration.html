@@ -35,65 +35,298 @@
         <main>
             <div class="registration-container">
                 <div class="registration-top">
-                    <div class="row text-center">
-                        <div class="small-4 columns">
-                            <div class="registration-item">
-                                <div class="registration-calc">Сумма
-                                    <br>кредита</div>
-                                <div class="registration-info">
-                                    <div class="js-reg-calc reg-calc">
-                                        <div>5500&#8372;</div>
-                                        <div>6000&#8372;</div>
-                                        <div>3000&#8372;</div>
-                                        <div>5500&#8372;</div>
-                                        <div>6000&#8372;</div>
-                                        <div>3000&#8372;</div>
-                                    </div>
+                    <div class="registration-wrapper">
+                        <div class="registration-item">
+                            <div class="registration-info">Сумма кредита
+                            </div>
+                            <div class="registration-calc">
+                                <span class="icon-pen_grey"></span>
+                                <div class="js-reg-calc reg-calc">
+                                    <div>5500&#8372;</div>
+                                    <div>6000&#8372;</div>
+                                    <div>3000&#8372;</div>
+                                    <div>5500&#8372;</div>
+                                    <div>6000&#8372;</div>
+                                    <div>3000&#8372;</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="small-4 columns">
-                            <div class="registration-item">
-                                <div class="registration-info">
-                                    <div class="registration-calc">Дата
-                                        <br>погашения</div>
-                                    <span>21.06.2016</span>
-                                </div>
+                        <div class="registration-item">
+                            <div class="registration-info">
+                                Дата погашения
+                            </div>
+                            <div class="registration-calc">
+                                <span class="icon-pen_grey"></span>
+                                <span>21.06.2016</span>
                             </div>
                         </div>
-                        <div class="small-4 columns">
-                            <div class="registration-item">
-                                <div class="registration-info registration-info--inverse">
-                                    <div class="registration-calc">Сумма
-                                        <br>к возврату</div>
-                                    <span>21.06.2016</span>
-                                </div>
+                        <div class="registration-item">
+                            <div class="registration-info">
+                                Сумма к возврату
                             </div>
+                            <div class="registration-calc registration-calc--inverse"><span>6000&#8372;</span></div>
                         </div>
                     </div>
                 </div>
                 <div class="registration-tabs">
                     <ul class="tabs" data-tabs id="example-tabs">
-                        <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Контактные <br> данные</a></li>
-                        <li class="tabs-title"><a href="#panel2">Личные <br>данные</a></li>
-                        <li class="tabs-title"><a href="#panel3">Занятость</a></li>
+                        <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Контактные данные <span class="icon-pen_grey"></span></a></li>
+                        <li class="tabs-title"><a href="#panel2">Личные данные <span class="icon-pen_grey"></span></a></li>
+                        <li class="tabs-title"><a href="#panel3">Занятость <span class="icon-pen_grey"></span></a></li>
                     </ul>
                     <div class="tabs-content" data-tabs-content="example-tabs">
                         <div class="tabs-panel is-active" id="panel1">
                             <form>
                                 <div class="row">
-                                    <input type="text" placeholder="Телефон">
+                                    <input type="text" placeholder="Телефон" aria-describedby="exampleHelpText" required pattern="number">
+                                    <span class="form-error">
+                                      Yo, you had better fill this out, it's required.
+                                    </span>
                                     <input type="text" placeholder="E-mail">
                                     <input type="text" placeholder="Пароль">
                                     <input type="text" placeholder="Повторите пароль">
                                 </div>
+                                <div class="text-center registration-btn">
+                                    <button type="submit" class="button success large" href="#">Далее</button>
+                                </div>
                             </form>
                         </div>
                         <div class="tabs-panel" id="panel2">
-                            <p>Suspendisse dictum feugiat nisl ut dapibus. Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
+                            <form data-abide novalidate>
+                                <div class="row">
+                                    <input type="text" placeholder="Фамилия">
+                                    <input type="text" placeholder="Имя">
+                                    <input type="text" placeholder="Отчество">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Дата рождения</label>
+                                </div>
+                                <div class="row">
+                                    <div class="form-column">
+                                        <div class="select-wrapper">
+                                            <select id="customDropdown">
+                                                <option>This is a dropdown</option>
+                                                <option>This is another option</option>
+                                                <option>This is another option too</option>
+                                                <option>Look, a third option</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-column">
+                                        <div class="select-wrapper select-padding">
+                                            <select id="customDropdown1">
+                                                <option>This is a dropdown</option>
+                                                <option>This is another option</option>
+                                                <option>This is another option too</option>
+                                                <option>Look, a third option</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-column">
+                                        <div class="select-wrapper">
+                                            <select id="customDropdown2">
+                                                <option>This is a dropdown</option>
+                                                <option>This is another option</option>
+                                                <option>This is another option too</option>
+                                                <option>Look, a third option</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <select id="customDropdown3">
+                                        <option>This is a dropdown</option>
+                                        <option>This is another option</option>
+                                        <option>This is another option too</option>
+                                        <option>Look, a third option</option>
+                                    </select>
+                                </div>
+                                <div class="row">
+                                    <select id="customDropdown4">
+                                        <option>This is a dropdown</option>
+                                        <option>This is another option</option>
+                                        <option>This is another option too</option>
+                                        <option>Look, a third option</option>
+                                    </select>
+                                </div>
+                                <div class="row">
+                                    <input type="text" placeholder="Серия и номер паспорта">
+                                    <input type="text" placeholder="Кем выдан паспорт">
+                                </div>
+                                <div class="row">
+                                    <div class="form-column">
+                                        <div class="select-wrapper">
+                                            <select id="customDropdown">
+                                                <option>This is a dropdown</option>
+                                                <option>This is another option</option>
+                                                <option>This is another option too</option>
+                                                <option>Look, a third option</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-column">
+                                        <div class="select-wrapper select-padding">
+                                            <select id="customDropdown1">
+                                                <option>This is a dropdown</option>
+                                                <option>This is another option</option>
+                                                <option>This is another option too</option>
+                                                <option>Look, a third option</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-column">
+                                        <div class="select-wrapper">
+                                            <select id="customDropdown2">
+                                                <option>This is a dropdown</option>
+                                                <option>This is another option</option>
+                                                <option>This is another option too</option>
+                                                <option>Look, a third option</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <select id="customDropdown4">
+                                        <option>This is a dropdown</option>
+                                        <option>This is another option</option>
+                                        <option>This is another option too</option>
+                                        <option>Look, a third option</option>
+                                    </select>
+                                </div>
+                                <div class="row">
+                                    <select id="customDropdown4">
+                                        <option>This is a dropdown</option>
+                                        <option>This is another option</option>
+                                        <option>This is another option too</option>
+                                        <option>Look, a third option</option>
+                                    </select>
+                                </div>
+                                <div class="row">
+                                    <select id="customDropdown4">
+                                        <option>This is a dropdown</option>
+                                        <option>This is another option</option>
+                                        <option>This is another option too</option>
+                                        <option>Look, a third option</option>
+                                    </select>
+                                </div>
+                                <div class="row">
+                                    <input type="text" placeholder="Адрес проживания">
+                                    <input type="text" placeholder="Область">
+                                    <input type="text" placeholder="Город">
+                                    <input type="text" placeholder="Улица">
+                                </div>
+                                <div class="row">
+                                    <div class="form-column">
+                                        <div class="input-wrapper">
+                                            <input type="text" placeholder="Дом">
+                                        </div>
+                                    </div>
+                                    <div class="form-column">
+                                        <div class="input-wrapper input-padding">
+                                            <input type="text" placeholder="Корпус">
+                                        </div>
+                                    </div>
+                                    <div class="form-column">
+                                        <div class="input-wrapper">
+                                            <input type="text" placeholder="Квартира">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <select id="customDropdown4">
+                                        <option>This is a dropdown</option>
+                                        <option>This is another option</option>
+                                        <option>This is another option too</option>
+                                        <option>Look, a third option</option>
+                                    </select>
+                                </div>
+                                <div class="row">
+                                    <input type="text" placeholder="Корпус">
+                                </div>
+                                <div class="row">
+                                    <select id="customDropdown4">
+                                        <option>This is a dropdown</option>
+                                        <option>This is another option</option>
+                                        <option>This is another option too</option>
+                                        <option>Look, a third option</option>
+                                    </select>
+                                </div>
+                                <div class="text-center registration-btn">
+                                    <a class="button success large" href="#">Далее</a>
+                                </div>
+                            </form>
                         </div>
                         <div class="tabs-panel" id="panel3">
-                            <p>Suspendisse dictum feugiat nisl ut dapibus. Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
+                            <form action="">
+                                <div class="row">
+                                    <select id="customDropdown4">
+                                        <option>This is a dropdown</option>
+                                        <option>This is another option</option>
+                                        <option>This is another option too</option>
+                                        <option>Look, a third option</option>
+                                    </select>
+                                    <input type="text" placeholder="Месячный доход(грн)">
+                                    <select id="customDropdown4">
+                                        <option>This is a dropdown</option>
+                                        <option>This is another option</option>
+                                        <option>This is another option too</option>
+                                        <option>Look, a third option</option>
+                                    </select>
+                                    <select id="customDropdown4">
+                                        <option>This is a dropdown</option>
+                                        <option>This is another option</option>
+                                        <option>This is another option too</option>
+                                        <option>Look, a third option</option>
+                                    </select>
+                                    <select id="customDropdown4">
+                                        <option>This is a dropdown</option>
+                                        <option>This is another option</option>
+                                        <option>This is another option too</option>
+                                        <option>Look, a third option</option>
+                                    </select>
+                                    <input type="text" placeholder="Рабочий телефон компании">
+                                    <select id="customDropdown4">
+                                        <option>This is a dropdown</option>
+                                        <option>This is another option</option>
+                                        <option>This is another option too</option>
+                                        <option>Look, a third option</option>
+                                    </select>
+                                    <input type="text" placeholder="Месячный доход">
+                                    <select id="customDropdown4">
+                                        <option>This is a dropdown</option>
+                                        <option>This is another option</option>
+                                        <option>This is another option too</option>
+                                        <option>Look, a third option</option>
+                                    </select>
+                                    <select id="customDropdown4">
+                                        <option>This is a dropdown</option>
+                                        <option>This is another option</option>
+                                        <option>This is another option too</option>
+                                        <option>Look, a third option</option>
+                                    </select>
+                                    <select id="customDropdown4">
+                                        <option>This is a dropdown</option>
+                                        <option>This is another option</option>
+                                        <option>This is another option too</option>
+                                        <option>Look, a third option</option>
+                                    </select>
+                                    <select id="customDropdown4">
+                                        <option>This is a dropdown</option>
+                                        <option>This is another option</option>
+                                        <option>This is another option too</option>
+                                        <option>Look, a third option</option>
+                                    </select>
+                                    <select id="customDropdown4">
+                                        <option>This is a dropdown</option>
+                                        <option>This is another option</option>
+                                        <option>This is another option too</option>
+                                        <option>Look, a third option</option>
+                                    </select>
+                                </div>
+                                <div class="text-center registration-btn">
+                                    <a class="button success large" href="#">Далее</a>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -105,6 +338,7 @@
     <script src="bower_components/foundation-sites/dist/js/foundation.js"></script>
     <script src="js/app.js"></script>
     <script src="js/slick.js"></script>
+    <script src="js/jquery.prettydropdowns.js"></script>
     <script src="js/main.js"></script>
 </body>
 
