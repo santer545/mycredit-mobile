@@ -237,7 +237,8 @@
 	}
 }
 
-.card-heading {
+.card-heading,
+.personal-heading {
   font-size: 20px;
   margin-bottom: 20px;  
   color: #464e5b;
@@ -245,4 +246,16 @@
     font-size: 25px;
     margin-bottom: 34px;
   }
+}
+
+.personal-heading {
+  color: #0054b8;
+}
+
+.warning-heading {
+  font-size: 22px;
+  font-weight: 500; 
+  line-height: 25px;  
+  color: #be1624;
+  margin-bottom: 30px;  
 }

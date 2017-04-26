@@ -17,14 +17,34 @@
     box-shadow: -5px 4px 18px -5px rgba(0, 0, 0, 0.75); 
 }
 
-.button.large {
-    font-size: 20px;
-    border-radius: 5px;
-    padding: 20px 60px;
-    margin-bottom: 20px;
-    @media screen and (min-width: 500px) {
-        padding: 31px 155px;
-        margin-bottom: 30px;
-        font-size: 25px;
+.button {
+    &.large {
+        font-size: 20px;
+        border-radius: 5px;
+        padding: 20px 60px;
+        margin-bottom: 20px;
+        @media screen and (min-width: 500px) {
+            padding: 31px 155px;
+            margin-bottom: 30px;
+            font-size: 24px;
+        }
+    }
+    &.medium {
+        font-size: 17px;
+        font-weight: 400;   
+        border-radius: 5px;
+        padding: 20px 30px;
+        margin-bottom: 20px;
+        text-transform: uppercase;  
+        @media screen and (min-width: 500px) {
+            padding: 30px 70px;
+            margin-bottom: 30px;
+            font-size: 24px;
+        }
+    }
+    &.full {
+        width: 100%;    
     }
 }
+
+

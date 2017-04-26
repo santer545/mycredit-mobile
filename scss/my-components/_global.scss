@@ -5,7 +5,7 @@ body {
 }
 
 strong {
-    font-weight: 500;   
+    font-weight: 500;
 }
 
 .container {
@@ -44,6 +44,10 @@ strong {
     -webkit-box-shadow: 0px 6px 18px -5px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 6px 18px -5px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 6px 18px -5px rgba(0, 0, 0, 0.75);
+    &-inverse {
+        background-color: #fff;
+        box-shadow: none;
+    }
 }
 
 .logo {
@@ -160,16 +164,16 @@ strong {
         color: #464e5b;
         font-size: 16px;
         line-height: 22px;
-        display: inline-block;  
-        vertical-align: middle; 
-        width: 50%; 
+        display: inline-block;
+        vertical-align: middle;
+        width: 50%;
         @media screen and (min-width: 500px) {
-            width: 100%;    
-            display: block; 
+            width: 100%;
+            display: block;
             font-size: 22px;
         }
         [class^="icon-"] {
-            font-size: 15px;   
+            font-size: 15px;
         }
     }
     &-calc {
@@ -182,10 +186,9 @@ strong {
         }
     }
     &-info {
-         @media screen and (min-width: 500px) {
-            margin-bottom: 20px;    
-         }
-        
+        @media screen and (min-width: 500px) {
+            margin-bottom: 20px;
+        }
     }
     &-btn {
         padding-top: 25px;
@@ -226,14 +229,14 @@ strong {
         }
     }
     &-item {
-        font-size: 0;   
+        font-size: 0;
         width: 100%;
-        margin-bottom: 20px;    
+        margin-bottom: 20px;
         @media screen and (min-width: 500px) {
             width: 33.3%;
             float: left;
-            margin-bottom: 0;   
-            text-align: center; 
+            margin-bottom: 0;
+            text-align: center;
         }
     }
 }
@@ -322,18 +325,106 @@ strong {
     }
 }
 
+.authorize {
+    padding-top: 50px;
+    @media screen and (min-width: 500px) {
+        padding-top: 100px;
+    }
+    &-link {
+        font-size: 17px;
+        font-weight: 300;
+        color: #153860;
+        display: inline-block;
+        padding-bottom: 30px;
+        @media screen and (min-width: 500px) {
+            padding-bottom: 50px;
+            font-size: 25px;
+        }
+    }
+}
+
+// credit
+.credit {
+    padding-top: 70px;
+    &-top {
+        background-color: #1ab07c;
+        padding: 10px;
+        font-size: 17px; 
+        color: #fff;
+        font-weight: 400; 
+        @media screen and (min-width: 500px) {
+            padding: 20px;
+            font-size: 22px; 
+        }
+        &--inverse {
+            background-color: #16a285;
+        }  
+    }
+    &-value,
+    &-label {
+        font-weight: 300;   
+        font-size: 16px;    
+        color: #464e5b;
+        @media screen and (min-width: 500px) {
+            font-size: 22px;    
+        }
+    }
+    &-label {
+        font-weight: 500;   
+    }
+    &-wrapper {
+        border-radius: 3px; 
+        -webkit-box-shadow: -2px 3px 59px -5px rgba(0,0,0,0.75);
+        -moz-box-shadow: -2px 3px 59px -5px rgba(0,0,0,0.75);
+        box-shadow: -2px 3px 59px -5px rgba(0,0,0,0.75);  
+        margin-bottom: 30px;    
+    }
+    &-list {
+        padding: 10px;
+        @media screen and (min-width: 500px) {
+            padding: 20px;
+        }    
+        &--inverse {
+            background-color: #d9e6f4;
+        }
+    }
+    &-item {
+        padding: 10px 0;
+        border-bottom: 1px solid #f2f2f2; 
+         @media screen and (min-width: 500px) {
+            padding: 20px 0;
+        }
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+    &-result {
+        text-align: center;
+        padding: 10px 0;
+        margin: 0 10px; 
+        font-size: 17px;    
+        color: #1ab07c;
+        border-bottom: 1px solid #f2f2f2; 
+        @media screen and (min-width: 500px) {
+            padding: 20px 0;
+            font-size: 22px;   
+            margin: 0 20px;  
+        }
+    }
+}
+
+
 
 // card
-
 .card {
     &-holder {
         padding-top: 25px;
         color: #464e5b;
-        font-size: 19px;    
-        font-weight: 300;  
+        font-size: 19px;
+        font-weight: 300;
         @media screen and (min-width: 500px) {
             font-size: 22px;
-        } 
+        }
     }
     &-info {
         background-color: #e5eef8;
@@ -359,51 +450,113 @@ strong {
         }
     }
     &-blocked {
-        font-size: 19px;    
-        font-weight: 500;   
+        font-size: 19px;
+        font-weight: 500;
         @media screen and (min-width: 500px) {
             font-size: 22px;
         }
     }
     &-warning {
-        width: 100%; 
-        margin: 0 auto; 
-        font-weight: 300;  
+        width: 100%;
+        margin: 0 auto;
+        font-weight: 300;
         @media screen and (min-width: 500px) {
             width: 80%;
+        }
+        &--full {
+            width: 100%;
+            padding: 20px 0;
+            span,
+            p {
+                margin-bottom: 0;
+            }
         }
         p {
             font-size: 0;
         }
         span {
-            display: inline-block;  
+            display: inline-block;
             vertical-align: middle;
-            font-size: 15px;    
-            margin-bottom: 20px;    
+            font-size: 15px;
+            margin-bottom: 20px;
         }
     }
     &-icon {
-        width: 32px;    
+        width: 32px;
         height: 32px;
-        margin-right: 20px; 
+        margin-right: 20px;
         svg {
-            width: 32px;    
-            height: 32px;   
+            width: 32px;
+            height: 32px;
         }
-        
     }
     &-text {
         width: calc(100% - 52px);
     }
     &-how {
-        padding: 0; 
-        margin: 0;  
-        list-style-type: none;  
-        font-size: 19px;    
-        font-weight: 300;   
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        font-size: 19px;
+        font-weight: 300;
         color: #464e5b;
         @media screen and (min-width: 500px) {
             font-size: 22px;
         }
     }
+}
+
+// personal 
+.personal {
+    &-wrapper {
+        padding-top: 35px;
+    }
+    &-item {
+        margin-bottom: 30px;
+        @media screen and (min-width: 500px) {
+            margin-bottom: 75px;
+        }
+    }
+}
+
+
+// modal
+
+.reveal {
+    font-size: 18px;
+    font-weight: 300;   
+    color: #464e5b;
+    height: auto;
+    max-height: none;
+    min-height: 0;   
+    margin: 0 auto; 
+    left: auto;
+    @media screen and (min-width: 500px) {
+        font-size: 20px;    
+    }
+    &.small {
+        width: 80%; 
+        padding: 20px;  
+        @media screen and (min-width: 500px) {
+            padding: 40px;  
+            width: 75%; 
+        }
+    }
+}
+
+.modal-btn {
+    font-size: 17px;    
+    font-weight: 400;   
+    text-transform: uppercase;
+    color: #1ab07c;
+    margin-left: 20px;  
+    cursor: pointer;
+}
+
+.modal-cancel {
+    font-size: 17px;    
+    text-transform: uppercase;  
+    font-weight: 400;   
+    color: #aaacb0;
+    cursor: pointer;
 }
