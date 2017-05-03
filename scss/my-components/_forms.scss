@@ -55,6 +55,84 @@ textarea {
     }
 }
 
+
+.has-error {
+    [type='text'],
+    [type='password'],
+    [type='date'],
+    [type='datetime'],
+    [type='datetime-local'],
+    [type='month'],
+    [type='week'],
+    [type='email'],
+    [type='number'],
+    [type='search'],
+    [type='tel'],
+    [type='time'],
+    [type='url'],
+    [type='color'],
+    textarea {
+        color: #e41239;
+        border: 1px solid #e41239;
+        &::-webkit-input-placeholder {
+            /* Chrome/Opera/Safari */
+            color: #e41239;
+        }
+        &::-moz-placeholder {
+            /* Firefox 19+ */
+            color: #e41239;
+        }
+        &:-ms-input-placeholder {
+            /* IE 10+ */
+            color: #e41239;
+        }
+        &:-moz-placeholder {
+            /* Firefox 18- */
+            color: #e41239;
+        }
+        
+    }
+}
+
+.has-success {
+    [type='text'],
+    [type='password'],
+    [type='date'],
+    [type='datetime'],
+    [type='datetime-local'],
+    [type='month'],
+    [type='week'],
+    [type='email'],
+    [type='number'],
+    [type='search'],
+    [type='tel'],
+    [type='time'],
+    [type='url'],
+    [type='color'],
+    textarea {
+        color: #22a212;
+        border: 1px solid #22a212;
+        &::-webkit-input-placeholder {
+            /* Chrome/Opera/Safari */
+            color: #22a212;
+        }
+        &::-moz-placeholder {
+            /* Firefox 19+ */
+            color: #22a212;
+        }
+        &:-ms-input-placeholder {
+            /* IE 10+ */
+            color: #22a212;
+        }
+        &:-moz-placeholder {
+            /* Firefox 18- */
+            color: #22a212;
+        }
+        
+    }
+}
+
+
 .form-column {
     width: 100%;
     float: none;
@@ -148,7 +226,7 @@ textarea {
     /* 70px + borders */
     display: inline-block;
     width: 100% !important;
-    margin-bottom: 0;
+    margin-bottom: 10px;
 }
 
 .prettydropdown.loading {
@@ -184,6 +262,12 @@ textarea {
     margin: 0!important;  
     & + select {
         margin: 0;  
+    }
+}
+
+.prettydropdown.has-success {
+    ul {
+        border: 1px solid #22a212;
     }
 }
 
@@ -401,4 +485,13 @@ textarea {
 .prettydropdown > ul > li.label,
 .prettydropdown > ul > li.label ~ li.selected {
     border-top-color: #dedede;
+}
+
+
+
+
+
+input:disabled, input[readonly], textarea:disabled, textarea[readonly] {
+    background-color: transparent;
+    cursor: pointer;
 }

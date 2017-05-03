@@ -138,6 +138,16 @@ strong {
     @media screen and (min-width: 500px) {
         font-size: 42px;
     }
+    [class^="icon-"] {
+        color: #464e5b;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+.slick-list {
+    text-align: center;
 }
 
 .reg-calc {
@@ -152,6 +162,41 @@ strong {
 
 .slick-track {
     padding-top: 2px;
+}
+
+.slick-prev,
+.slick-next {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    cursor: pointer;
+    z-index: 3;
+    display: none!important;
+    &.active {
+        display: block !important;
+    }
+}
+
+.input-date {
+    padding: 0;
+    font-size: 17px;
+    display: inline-block;
+    width: 130px;
+    height: 25px;
+    border: none;
+    font-weight: 400;
+    color: #464e5b;
+    @media screen and (min-width: 500px) {
+        font-size: 22px;
+    }
+    &:focus {
+        border: none;
+    }
+}
+
+.slick-next {
+    left: auto;
+    right: 0;
 }
 
 .days {
@@ -174,6 +219,7 @@ strong {
         }
         [class^="icon-"] {
             font-size: 15px;
+            cursor: pointer;
         }
     }
     &-calc {
@@ -271,6 +317,14 @@ strong {
     }
     &.is-active {
         background-color: $second-color;
+    }
+    &.success {
+        background-color: $second-color;
+        opacity: 0.5;
+        
+        a {
+            color: #464e5b;
+        }
     }
     a {
         font-size: 19px;
@@ -560,3 +614,4 @@ strong {
     color: #aaacb0;
     cursor: pointer;
 }
+
