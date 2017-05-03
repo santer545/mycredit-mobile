@@ -191,21 +191,21 @@
         <main>
             <div class="registration-container">
                 <section class="authorize">
-                    <form action="">
+                    <form action="" class="js_validate form">
                         <div class="form-group">
                             <div class="control-wr">
                                 <svg class="icon icon-phone_registration"><use xlink:href="#icon-phone_registration"></use></svg>
-                                <input type="text" placeholder="Номер мобильного телефона" class="form-control">
+                                <input type="text" placeholder="Номер мобильного телефона" class="form-control" required data-validate="phone" id="phone">
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="control-wr">
                                 <svg class="icon icon-lock_registration"><use xlink:href="#icon-lock_registration"></use></svg>
-                                <input type="password" placeholder="Пароль" class="form-control">
+                                <input type="password" placeholder="Пароль" class="form-control" required data-validate="pass">
                             </div>
                         </div>
                         <div class="text-center registration-btn">
-                            <a class="button success full large" href="#">Войти</a>
+                            <button type="submit" class="button success full large" href="#">Войти</button>
                         </div>
                     </form>
                 </section>
@@ -217,7 +217,7 @@
                     <div class="small-6">
                         <a href="" class="authorize-link">Забыли пароль?</a>
                     </div>
-                    <div class="small-6">
+                    <div class="small-6 text-right">
                         <a href="" class="authorize-link">Зарегестрироваться</a>
                     </div>
                 </div>
@@ -232,6 +232,7 @@
     <script src="js/jquery.prettydropdowns.js"></script>
     <script src="js/validate.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/foundation-datepicker.min.js "></script>
     <script src="js/main.js"></script>
 </body>
 
