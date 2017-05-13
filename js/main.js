@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     // Calculator carousel
     $('.center').slick({
-  centerMode: true,
+  
   centerPadding: '60px',
   slidesToShow: 3,
   responsive: [
