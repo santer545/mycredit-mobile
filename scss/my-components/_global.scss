@@ -69,11 +69,17 @@ strong {
             width: 140px;
             border-radius: 30px;    
             /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0.47+100 */
-background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0.47) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0.47) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0.47) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#78ffffff',GradientType=0 ); /* IE6-9 */
+            background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0.47) 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0.47) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0.47) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#78ffffff',GradientType=0 ); /* IE6-9 */
             z-index: 1;
+            @media screen and (min-width: 400px) {
+                width: 190px;
+            }
+            @media screen and (min-width: 500px) {
+                width: 140px;
+            }
         }
         &:before {
             left: auto;
@@ -157,8 +163,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     .slick-slide {
         font-size: 17px;
         color: $second-color;
+        
         @media screen and (min-width: 500px) {
             font-size: 22px;
+            text-align: center;
         }
     }
 }
@@ -207,6 +215,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 
 .registration {
+    &-tabs {
+        padding-top: 55px;
+    }
     &-info,
     &-calc {
         color: #464e5b;
@@ -215,6 +226,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
         display: inline-block;
         vertical-align: middle;
         width: 50%;
+        
         @media screen and (min-width: 500px) {
             width: 100%;
             display: block;
@@ -226,7 +238,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
         }
     }
     &-calc {
-        text-align: right;
+        text-align: center;
         @media screen and (min-width: 500px) {
             text-align: center;
         }
@@ -268,9 +280,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
                 }
             }
         }
-    }
-    &-tabs {
-        padding-top: 55px;
     }
     &-wrapper {
         @media screen and (min-width: 500px) {
@@ -388,7 +397,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
         padding-top: 100px;
     }
     &-link {
-        font-size: 17px;
+        font-size: 15px;
         font-weight: 300;
         color: #153860;
         display: inline-block;
@@ -573,6 +582,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
         @media screen and (min-width: 500px) {
             margin-bottom: 75px;
         }
+    }
+}
+
+.close {
+    padding-top: 3px;   
+    cursor: pointer;
+    float: right;   
+    svg {
+        display: inline-block;  
+        width: 20px;    
+        height: 20px;   
     }
 }
 
