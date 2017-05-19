@@ -52,11 +52,19 @@
                         </div>
                         <div class="registration-item">
                             <div class="registration-info">
-                                Дата погашения
+                                Срок погашения
                             </div>
                             <div class="registration-calc">
-                                <span class="icon-pen_grey"></span>
-                                <input type="text" class="input-date" value="02.12.1989" id="dpt" readonly>
+                            <div class="registration-calc">
+                                <div class="js-reg-calc reg-calc">
+                                    <div><span class="icon-pen_grey js_edit"></span> 10 дн</div>
+                                    <div><span class="icon-pen_grey js_edit"></span> 20 дн</div>
+                                    <div><span class="icon-pen_grey js_edit"></span> 30 дн</div>
+                                    
+                                </div>
+                            </div>
+                                <!--<span class="icon-pen_grey"></span>
+                                <input type="text" class="input-date" value="02.12.1989" id="dpt" readonly>-->
                             </div>
                         </div>
                         <div class="registration-item">
@@ -80,6 +88,9 @@
                                     <input type="text" placeholder="Телефон" required type="text" id="phone" data-validate="phone">
                                 </div>
                                 <div class="form-group">
+                                    <button data-open="exampleModal1" class="button success">Код подтверждения</button>
+                                </div>
+                                <div class="form-group">
                                     <input type="text" placeholder="E-mail" required type="email" data-validate="email">
                                 </div>
                                 <div class="form-group">
@@ -87,6 +98,9 @@
                                 </div>
                                 <div class="form-group">
                                     <input placeholder="Повторите пароль" required type="password" data-validate="pass1">
+                                </div>
+                                <div class="form-group">
+                                    <input placeholder="Промокод" required type="password" data-validate="pass1">
                                 </div>
                                 <div class="text-center registration-btn">
                                     <button type="submit" class="button success large" href="#">Далее</button>
@@ -106,9 +120,7 @@
                                         <input type="text" placeholder="Отчество" required type="text">
                                     </div>
                                 </div>
-                                <div class="form-group">
-                                    <label for="">Дата рождения</label>
-                                </div>
+                                <label for="">Дата рождения</label>
                                 <div class="row form-group">
                                     <div class="form-column">
                                         <div class="select-wrapper">
@@ -378,13 +390,29 @@
             </div>
         </main>
     </div>
+    <div class="reveal small" id="exampleModal1" data-reveal>
+        <p class="warning-heading">Подтверждение телефона</p>
+        
+        <form action="">
+            <div class="form-group">
+                <input type="text" placeholder="Телефон">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Код" class="cod">
+            </div>
+        </form>
+        <div class="text-center">
+            
+            <a href="" class="modal-btn">Подтвредить</a>
+        </div>
+    </div>
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/what-input/dist/what-input.js"></script>
     <script src="bower_components/foundation-sites/dist/js/foundation.js"></script>
     <script src="js/app.js"></script>
     <script src="js/slick.js"></script>
     <script src="js/jquery.prettydropdowns.js"></script>
-    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/jquery.inputmask.bundle.js"></script>
     <script src="js/validate.js"></script>
     <script src="js/foundation-datepicker.min.js"></script>
     <script src="js/main.js"></script>

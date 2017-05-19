@@ -17,9 +17,9 @@ $(document).ready(function() {
             breakpoint: 480,
             settings: {
                 arrows: false,
-                centerMode: true,
-                centerPadding: '40px',
-                slidesToShow: 1
+                centerMode: false,
+                centerPadding: '10px',
+                slidesToShow: 3
             }
         }]
     });
@@ -42,19 +42,23 @@ $(document).ready(function() {
     // open menu 
     openMenu();
 
+
+
+
+
     // close menu
     /*openMenuClose ();*/
-    $("#card-number").mask("9999 9999 9999 9999", {
+    openMenuClose();
+
+
+    $("#card-number").inputmask("9999 9999 9999 9999", {
         autoclear: false,
         placeholder: "-"
     });
 
 
-    $("#phone").mask("+38099 999 9999", {
-        autoclear: false
-    });
 
-    openMenuClose();
+    $('#phone').inputmask("+380 99 999 9999");
 
 
 

@@ -1,7 +1,11 @@
 body {
     font-family: 'Roboto', sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     background-color: $body-bg;
+}
+
+p {
+    margin: 0 0 10px;   
 }
 
 strong {
@@ -66,7 +70,7 @@ strong {
             top: 0;
             bottom: 0;
             left: 0;
-            width: 140px;
+            width: 70px;
             border-radius: 30px;    
             /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0.47+100 */
             background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0.47) 100%); /* FF3.6-15 */
@@ -161,6 +165,7 @@ strong {
 
 .reg-calc {
     .slick-slide {
+
         font-size: 17px;
         color: $second-color;
         
@@ -178,11 +183,14 @@ strong {
 .slick-prev,
 .slick-next {
     position: absolute;
-    left: 0;
-    top: 2px;
+    left: -5px;
+    top: 5px;
     cursor: pointer;
     z-index: 3;
     display: none!important;
+    @media screen and (min-width: 500px) {
+        top: 2px;   
+    }
     &.active {
         display: block !important;
     }
@@ -207,7 +215,7 @@ strong {
 
 .slick-next {
     left: auto;
-    right: 0;
+    right: -5px;
 }
 
 .days {
@@ -216,7 +224,10 @@ strong {
 
 .registration {
     &-tabs {
-        padding-top: 55px;
+        padding-top: 30px;
+        @media screen and (min-width: 500px) {
+            padding-top: 55px;
+        }
     }
     &-info,
     &-calc {
@@ -311,15 +322,16 @@ strong {
     height: 60px;
     line-height: 60px;
     float: none;
-    width: 100%;
+    width: 33.3%;
+    float: left;
     text-align: center;
     background-color: #f2f2f2;
-    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
     cursor: pointer;
     @media screen and (min-width: 500px) {
         height: 75px;
         line-height: 75px;
-        width: 33.3%;
+        
         border-right: 1px solid #fff;
         border-bottom: none;
     }
@@ -339,7 +351,7 @@ strong {
         }
     }
     a {
-        font-size: 19px;
+        font-size: 14px;
         color: #464e5b;
         opacity: 0.5;
         display: inline-block;
@@ -348,6 +360,9 @@ strong {
         line-height: 20px;
         align-content: center;
         background-color: transparent;
+        @media screen and (min-width: 400px) {
+            font-size: 19px;
+        }
         @media screen and (min-width: 600px) {
             font-size: 22px;
         }
@@ -355,7 +370,10 @@ strong {
             background-color: transparent;
         }
         span {
-            font-size: 15px;
+            font-size: 11px;
+            @media screen and (min-width: 400px) {
+                font-size: 15px;
+            }
         }
     }
 }
@@ -397,7 +415,7 @@ strong {
         padding-top: 100px;
     }
     &-link {
-        font-size: 15px;
+        font-size: 14px;
         font-weight: 300;
         color: #153860;
         display: inline-block;
@@ -411,7 +429,10 @@ strong {
 
 // credit
 .credit {
-    padding-top: 70px;
+    padding-top: 30px;
+    @media screen and (min-width: 500px) {
+        padding-top: 50px;
+    }
     &-top {
         background-color: #1ab07c;
         padding: 10px;
@@ -638,3 +659,66 @@ strong {
     cursor: pointer;
 }
 
+// status
+
+.status {
+    margin-bottom: 30px;
+    &-img {
+        text-align: center;
+        margin-bottom: 20px;
+        svg,
+        img {
+            display: inline-block;
+            vertical-align: middle;
+            width: 100px;
+        }
+    }
+    &-description {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+// payment 
+
+.payment {
+    padding-top: 40px;  
+}
+
+
+.accordion-title {
+    
+    padding: 1.25rem 1rem;
+    border: 1px solid #e6e6e6;
+    border-bottom: 0;
+    font-size: 18px;
+    line-height: 1;
+    color: #fff;
+}
+
+.pay-heading {
+    font-size: 20px;    
+    color: $brand-color;
+    line-height: 20px; 
+    margin-bottom: 20px;    
+    @include clearfix;
+    .pay-icon {
+        margin-right: 10px; 
+        float: left;
+        img {
+            height: 50px;   
+        }
+    }
+}
+.pay-left {
+    margin-bottom: 30px;    
+}
+.pay-left,
+.pay-right {
+    .pay-top {
+        margin-bottom: 20px;
+    }
+    figure {
+        margin-bottom: 10px;    
+    }
+}

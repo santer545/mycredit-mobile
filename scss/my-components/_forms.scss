@@ -56,6 +56,10 @@ textarea {
     }
 }
 
+.cod {
+    width: 120px;
+}
+
 
 .has-error {
     [type='text'],
@@ -138,6 +142,10 @@ textarea {
     width: 33.3%;
     float: left;
     padding: 0 15px;
+}
+
+label {
+    margin-bottom: 10px;
 }
 
 .form-control {
@@ -497,7 +505,7 @@ textarea {
 
 
 input:disabled, input[readonly], textarea:disabled, textarea[readonly] {
-    background-color: transparent;
+    background-color: #eaeaea;
     cursor: pointer;
 }
 
