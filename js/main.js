@@ -37,7 +37,10 @@ $(document).ready(function() {
     $('select').prettyDropdown();
 
     // Tabs
-    var elem = new Foundation.Tabs($('#example-tabs'));
+    if($('#example-tabs')) {
+        var elem = new Foundation.Tabs($('#example-tabs'));
+    }
+    
 
     // open menu 
     openMenu();
@@ -134,7 +137,6 @@ function openMenu() {
     $('#js-gamburger').click(function() {
         $('.js-nav').addClass('active');
         $('.js-overlay').addClass('active');
-        console.log('Alarm!');
     });
 }
 
