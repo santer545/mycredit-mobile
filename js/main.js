@@ -1,5 +1,28 @@
 $(document).ready(function() {
 
+    /*bootstrap slider*/
+
+    $("#js-money").slider();
+
+    $("#js-money").on("slide", function(slideEvt) {
+        $("#money-value").val(slideEvt.value);
+    });
+
+    $("#js-days").slider();
+
+    $("#js-days").on("slide", function(slideEvt) {
+        $("#day-value").val(slideEvt.value);
+    });
+
+
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        slidesPerView: 3,
+        paginationClickable: true,
+        /*centeredSlides: true,*/
+        freeMode: true
+    });
+
     // Calculator carousel
     $('.center').slick({
 
@@ -37,13 +60,15 @@ $(document).ready(function() {
     $('select').prettyDropdown();
 
     // Tabs
-    if($('#example-tabs')) {
+    if ($('#example-tabs')) {
         var elem = new Foundation.Tabs($('#example-tabs'));
     }
-    
+
 
     // open menu 
     openMenu();
+
+    openMenuPhone();
 
 
 
@@ -53,6 +78,7 @@ $(document).ready(function() {
     /*openMenuClose ();*/
     openMenuClose();
 
+    openMenuPhoneClose();
 
     $("#card-number").inputmask("9999 9999 9999 9999", {
         autoclear: false,
@@ -140,9 +166,23 @@ function openMenu() {
     });
 }
 
+function openMenuPhone() {
+    $('.js-phone').click(function() {
+        $('.js-nav-phone').addClass('active');
+        $('.js-overlay').addClass('active');
+    });
+}
+
 function openMenuClose() {
     $('.js-close').click(function(event) {
         $('.js-nav').removeClass('active');
+        $('.js-overlay').removeClass('active');
+    });
+}
+
+function openMenuPhoneClose() {
+    $('.js-close').click(function(event) {
+        $('.js-nav-phone').removeClass('active');
         $('.js-overlay').removeClass('active');
     });
 }

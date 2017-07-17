@@ -14,6 +14,11 @@
 		width: 350px;
 		transform: translate(-350px, 0);
 	}
+	&-phone {
+		transform: translate(100%, 0);
+		right: 0;
+		left: auto;
+	}
 	&.active {
 		transform: translate(0, 0);
 	}
